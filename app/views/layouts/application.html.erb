@@ -2,13 +2,39 @@
 <html>
 <head>
   <title>Sofa</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class="wrap">
+      <h1>
+        <img src="https://dax2lgcd0wbaz.cloudfront.net/assets/shared/sofar-logo-3dbe44e9a52fd946e98f029a8e0434c10dc197a15a53724a4b619eacd2f4fe93.png">
+      </h1>
+      <nav>
+        <a href="https://www.sofarsounds.com/about">
+          How it works
+        </a>
+        <a href="https://www.sofarsounds.com/#">
+          Join us
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<%= yield %>
+  <section class="hero">
+    <div class="wrap">
+      <div class="intro">
+        <h2>Sofa Songs</h2>
+        <p>Intimate gigs around the world</p>
+      </div>
+    </div>
+  </section>
+
+  
+    <%= yield %>
 
 </body>
 </html>

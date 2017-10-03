@@ -1,0 +1,184 @@
+body {
+  font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+	
+	background-color: #f4f4f4;
+	color: #000000;
+}
+
+header {
+  background-color: #000000;
+  color: #f4f4f4;
+  border-top: 4px solid #c7c7c7;
+  padding: 20px 0 10px;
+}
+
+div.wrap {
+  width: 960px;
+  margin: 0 auto 0 auto;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  width: 75px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 0 15px;
+}
+
+section.hero {
+  background-image: url(https://images.unsplash.com/photo-1459305272254-33a7d593a851?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=);
+  background-size: cover;
+  background-position: center;
+  background-color: #bfbfb7;
+  color: #d6d4d5;
+  
+  padding: 100px 0 100px 0;
+}
+
+section.hero h2 {
+  font-size: 36px;
+  max-width: 480px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+section.hero p {
+  font-size: 24px;
+  max-width: 400px;
+  margin: 10px 0 0 0;
+}
+
+section.products {
+  padding: 40px 0 40px 0;
+}
+
+section.products nav {
+  margin: 0 0 20px 0;
+}
+
+section.products nav a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px 0 0;
+}
+
+section.products span.page.current {
+  color: #bfbfb7;
+  font-weight: 700;
+}
+
+section.products nav a.selected {
+  border-bottom: 3px solid #feea34;
+}
+
+section.products span.toggle-filter {
+  color: #bfbfb7;
+  display: none;
+}
+
+
+div.product {
+  background-color: #c7c7c7;
+  width: 28%;
+  float: left;
+  position: relative;
+  margin: 2% 2% 0;
+}
+
+div.product h4 {
+  position: absolute;
+  top: 40px;
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: center;
+  width: 100%;
+  font-weight: 800;
+}
+
+div.product p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+div.product p.artist {
+  bottom: 50px;
+ 
+}
+
+div.product img {
+  transition: opacity 1s;
+}
+
+div.product:hover img {
+  opacity: 0.25;
+}
+
+div.product:hover h4 {
+  opacity: 1;
+}
+
+div.product:hover p {
+  opacity: 1;
+}
+
+
+@media (max-width: 1000px) {
+  
+  div.wrap {
+    width: 90%;
+  }
+  
+  section.hero {
+    padding: 50px 0 50px 0;
+  }
+  
+}
+
+@media (max-width: 680px) {
+  
+  div.wrap {
+    width: auto;
+    margin: 0 20px 0 20px;
+  }
+  
+  div.product {
+    width: auto;
+  }
+  
+  section.hero {
+    background-image: none;
+    padding: 20px 0 20px 0;
+  }
+  
+  section.hero h2 {
+    font-size: 24px;
+  }
+  
+  section.hero h3 {
+    font-size: 18px;
+  }
+	
+	section.products nav a {
+		display: block;
+	}
+	
+	section.products span.toggle-filter {
+		display: block;
+	}
+  
+}
+
+

@@ -1,0 +1,30 @@
+<section class="products">
+  <div class="wrap">
+    <span class="toggle-filter">Show filters</span>
+    <nav class="filters">
+      <div class="wrap">
+        <a href="bandanas.html" class="selected">Song</a>
+        <a href="accessories.html">Artists</a>
+        <a href="bags.html">Cities</a>
+      </div>
+    </nav>
+    <div class="wrap">
+      <%= paginate(@songs) %>
+    </div>
+
+
+      <% @songs.each do |song| %>
+        <div class="product">
+          <div class="overlay">
+            <h4><%= song.title %></h4>
+            <p class="artist"><%= song.artist.name  if song.artist %></p>
+            <p class="city"><%= song.city.name if song.city %></p>
+          </div>
+          <img src="https://unsplash.it/640/640/?random">
+        </div>
+      <% end %>
+  </div>
+  <div class="wrap">
+    <%= paginate(@songs) %>
+  </div>
+</section>
