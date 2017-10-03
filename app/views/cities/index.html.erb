@@ -6,8 +6,8 @@
   <% @cities.each do |city| %>
     <div class="product">
       <div class="overlay">
-        <h4><%= city.name %></h4>
-        <p class="artist"><%= city.songs.count %></p>
+        <h4>Songs about <%= city.name %></h4>
+        <p class="artist">(we have <%= city.songs.count %>)</p>
         <!-- <p class="city"></p> -->
       </div>
       <img src="https://unsplash.it/640/640/?random">
