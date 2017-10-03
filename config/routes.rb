@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   root 'songs#index'
 
   resources :songs
+
+  get 'artists' => 'artists#index'
+  get 'cities' => 'cities#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
